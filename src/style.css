@@ -1,0 +1,31 @@
+body {
+  font-family: arial, sans-serif;
+}
+h1 {
+  color: gray;
+  font-size: 26px;
+  font-weight: 700;
+  height: auto;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+.vanilla-weather {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 3px solid;
+  border-radius: 5px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  font-family: arial, sans-serif;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
