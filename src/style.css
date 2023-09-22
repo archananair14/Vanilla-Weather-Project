@@ -29,7 +29,7 @@ li:first-letter {
 .vanilla-weather {
   max-width: 600px;
   margin: 30px auto;
-  padding: 30px;
+  padding: 10px;
   border: 3px solid;
   border-radius: 5px;
 }
@@ -45,4 +45,18 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -32px;
+}
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.check {
+  text-decoration: none;
+}
+.check:hover {
+  text-decoration: underline;
+}
+.active:hover {
+  text-decoration: underline;
 }
