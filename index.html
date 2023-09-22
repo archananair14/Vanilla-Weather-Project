@@ -11,16 +11,18 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container"></div>
     <div class="vanilla-weather">
-      <h1>New York</h1>
+      <h1 id="city"></h1>
       <ul>
         <li>Friday 14:20</li>
-        <li>Clear</li>
+        <li id="description">Clear</li>
       </ul>
       <div class="row">
         <div class="col-6">
@@ -28,14 +30,13 @@
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="Sunny"
           />
-          <strong class="wrap">12</strong>
+          <strong class="wrap" id="temperature"></strong>
           <span class="units">°C |<a href="#">°F </a></span>
         </div>
         <div class="col-6">
           <ul>
-            <li>Precipitation: 0%</li>
-            <li>Humidity: 73%</li>
-            <li>Wind: 2km/hr</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> km/hr</li>
           </ul>
         </div>
       </div>

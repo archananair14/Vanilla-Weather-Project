@@ -22,6 +22,7 @@ li {
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  text-transform: capitalize;
 }
 .vanilla-weather {
   max-width: 600px;
