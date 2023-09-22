@@ -14,3 +14,19 @@ function displayTemperature(response) {
 let key = "908252f0ce90156474cc02b551639303";
 let url = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${key}&units=metric`;
 axios.get(url).then(displayTemperature);
+
+let now = new Date();
+let dateElement = document.querySelector("#date");
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let day = days[now.getDay()];
+dateElement.innerHTML = `${day} ${hours}:${minutes}`;
