@@ -37,6 +37,11 @@ li:first-letter {
   max-width: 600px;
   margin: 30px auto;
 }
+.check {
+  font-family: arial, sans-serif;
+  text-align: center;
+  position: relative;
+}
 .wrap {
   font-size: 60px;
   line-height: 1;
